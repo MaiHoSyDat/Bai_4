@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tìm giá trị lớn nhất trong mảng:</h1>
+</body>
+</html>
+<script>
+    let numbers = [-2, 4, 7, 2, 10, 5];
+    max = numbers[0];
+    let index = 0
+    for (let i = 1; i < numbers.length; i++) {
+        if (max < numbers[i]) {
+            max = numbers[i];
+            index = i;
+        }
+    }
+    document.write("max là : " + max + " ở vị trí : " + index)
+</script>
